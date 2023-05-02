@@ -1,4 +1,3 @@
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="#">
@@ -10,7 +9,7 @@
   <p align="center">
     An Ecommerce made with Django
     <br />
-    <!-- <a href="https://github.com/SiddharthVijay/"><strong>Explore the docs »</strong></a> -->
+    <a href="https://github.com/SiddharthVijay/mayacommerce"><strong>Explore the docs »</strong></a>
 
   </p>
 </div>
