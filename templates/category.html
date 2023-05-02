@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+ <section class=" text-center container">
+   <div class="row py-lg-4">
+     <div class="col-lg-6 col-md-8 mx-auto">
+       <h1 class="fw-light">{{subcategory}}</h1>
+       <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. </p>
+       <!-- <p>
+         <a href="#" class="btn btn-primary my-2">Main call to action</a>
+         <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+       </p> -->
+     </div>
+   </div>
+ </section>
+
+ <div class="album py-4 bg-body-tertiary">
+   <div class="container">
+
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {% for prod in products  %}
+       <div class="col">
+         <div class="card shadow-sm"  onclick="location.href='{% url 'products' prod.id %}'">
+           <img src="/media/{{prod.profile_pic}}" style="max-height:250px;object-fit: cover;"/>
+           <div class="card-body">
+             <h4 class="card-text">{{prod}}</h4>
+             <p class="card-text">{{prod.description}}</p>
+           </div>
+         </div>
+       </div>
+       {% endfor  %}
+
+
+
+     </div>
+   </div>
+ </div>
+
+
+{% endblock content %}
