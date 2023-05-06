@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Container -->
+<div class="container mt-5 mb-5">
+   <div class="row d-flex justify-content-center">
+       <div class="col-md-12">
+           <div class="card">
+<section class="container padding-top-3x padding-bottom">
+
+  <h2 class="space-top-half" style="margin:0">Cart</h2>
+  <hr style="margin:8px 0px;">
+  <div class="row padding-top">
+
+    <!-- Cart -->
+    <div class="col-sm-8 padding-bottom-2x">
+      <p class="text-sm">
+        <span class="text-gray">Currently</span> {{cart_count}} items
+        <span class="text-gray"> in cart</span>
+        <a href="#" style="float:right;" class="btn btn-sm btn-dark" id="update">Update Cart</a>
+
+      </p>
+      <div class="shopping-cart">
+        <!-- Item -->
+        {% for i in object.cartitem_set.all %}
+        <div class="item">
+          <a href="{{i.item.get_absolute_url}}" class="item-thumb">
+            {% if i.item.profile_pic %}
+            <img src="/media/{{i.item.profile_pic}}" alt="Product">
+            {% else %}
+            <img src="{% static 'img/1.png' %}" alt="Shop item">
+            {% endif %}
+          </a>
+          <div class="item-details">
+            <h3 class="item-title"><a href="{{i.item.get_absolute_url}}">{{i.item.product}}-
+                <small>{{ i.item.name }}</small></a></h3>
+            <h4 class="item-price sitem"  data-p="{{i.item.amount}}">{{ i.item.amount }}</h4>
+            <div class="count-input">
+              <a class="incr-btn" data-p="{{i.item.pk}}" data-action="decrease" href="#">–</a>
+              <input type="number" id="inpqty_{{i.item.pk}}"  data-p="{{i.item.pk}}" class="quantity"   min="0" max="99" step="1" value="{{i.quantity}}"
+                data-price="{{i.item.amount}}">
+              <a class="incr-btn" data-p="{{i.item.pk}}" data-action="increase" href="#">+</a>
+            </div>
+          </div>
+          <a href="#" class="item-remove" data-toggle="tooltip" data-p="{{i.item.pk}}"  data-placement="top" title="Remove" data-delete="False">
+            <i class="bi bi-x-square"></i>
+          </a>
+        </div><!-- .item -->
+        {% endfor %}
+      </div><!-- .shopping-cart -->
+      <!-- Coupon -->
+    </div><!-- .col-sm-8 -->
+
+    <!-- Sidebar -->
+    <div class="col-md-3 col-md-offset-1 col-sm-4 padding-bottom-2x">
+      {% if cart_count > 0 %}
+
+        <h3 class="toolbar-title">Cart subtotal:</h3>
+        <h4 id="total" class="amount">{{object.currency}} {{object.total}}</h4>
+        <p class="text-sm text-gray">* Note:You will be
+          able to checkout.</p>
+
+        <a href="{% url 'checkout' %}" class="btn btn-primary ">Checkout</a>
+        {% endif %}
+    </div><!-- .col-md-3.col-sm-4 -->
+  </div><!-- .row -->
+</section><!-- .container -->
+
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

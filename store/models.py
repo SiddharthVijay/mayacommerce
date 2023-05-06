@@ -44,14 +44,18 @@ class UserProfile(models.Model):
         return self.user.username
 
 
+
+
+
+
 class CartItem(models.Model):
     cart = models.ForeignKey("Cart", on_delete=models.CASCADE)
     item = models.ForeignKey("Product", on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField(default=1)
+    quantity = models.PositiveIntegerField(default=0)
     line_item_total = models.DecimalField(max_digits=10, decimal_places=2,default=0.0)
 
     def __str__(self):
-        return self.item.title
+        return self.item.name
 
 
 class Cart(models.Model):

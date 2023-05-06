@@ -19,7 +19,15 @@ from django.contrib.auth.views import (
 urlpatterns = [
     path('', index, name='index'),
     path('add/', AddCart, name='AddCart'),
+    path('cart_edit/', EditCart, name='EditCart'),
+    path('cartcount/', CartCount, name='CartCount'),
     path('index/', index, name='index'),
+    path('checkout/', checkout, name='checkout'),
+    path('viewcart/', viewcart, name='viewcart'),
+    path('payment/', Payment, name='payment'),
+    path('payment_redirect/', payment_redirect, name='payment_redirect'),
+    path('checkoutcommit/', CheckoutCommit, name='payment'),
+
     path ('loagin/', login, name='login'),
     path ('category/<str:id>/', category, name='category'),
     path ('products/<str:id>/', products, name='products'),

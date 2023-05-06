@@ -6,15 +6,15 @@
 {% block content %}
 
 
-<div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div style ="    height: 300px; width: 100%;   background: #444;    margin: 0 auto;">
-          <img src="{% static 'images/carousel1.jpg' %}" style="    width: 100%;  object-fit: none;    max-height: 100%;    height: auto;" class="bd-placeholder-img">
+      <!-- <div class="carousel-item active">
+        <div style ="    height: 530px;width: 100%;background: #f8f6f7;margin: 0 auto;">
+          <img src="{% static 'images/women.jpg' %}" style="    width: 600px;object-fit: contain;float:left;max-height: 100%;height: auto;" class="bd-placeholder-img">
         </div>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -23,17 +23,19 @@
             <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="carousel-item ">
-        <div style ="    height: 300px; width: 100%;   background: #444;    margin: 0 auto;">
-          <img src="{% static 'images/carousel1.jpg' %}" style="    width: 100%;  object-fit: none;    max-height: 100%;    height: auto;" class="bd-placeholder-img">
+      <div class="carousel-item active">
+        <div style ="    height: 530px;width: 100%;background: #f8f6f7;margin: 0 auto;">
+          <img src="{% static 'images/women.jpg' %}" style="width: 600px;height: 550px;object-fit: cover;object-position: right top;" class="bd-placeholder-img">
         </div>
         <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          <div class="carousel-caption text-end" style="color:black;">
+            <p style="margin-bottom:0px;">Limited Time Only For Fall</p>
+
+<span style="color: #000000;margin-bottom: 0;font-family: 'Poppins';font-weight: 800;font-size: 92px;padding: 0 60px;background: #f5cd78;object-fit: contain;">Fashion</span>
+            <h4>Some representative placeholder content for</h4><h4> the third slide of this carousel.</h4>
+            <p><a class="btn  btn-dark" href="#">Browse gallery</a></p>
           </div>
         </div>
       </div>
@@ -48,48 +50,248 @@
     </button>
   </div>
 
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4 marketing">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
 
 
-    <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+<div class="card mb-5">
+  <div class="container  " >
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
 
-    <div class="row featurette mb-3 ">
-      <div class="col-md-10">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-2">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
+          <div class="col d-flex align-items-start">
+            <div style="border: 3px solid #0d6efd;border-radius: 100%;background: white;padding: 5px 15px;color:#0d6efd" class="feature-icon d-inline-flex align-items-center justify-content-center   fs-2 mb-3">
+                                  <i class="bi bi-truck-front-fill" width="1em" height="1em"></i>
+                        </div>
+            <div style="margin-left:10px;">
+              <h5 class="fw-bold mb-1">Free Delivery</h3>
+              <span>Get free delivery for every order above $20.</span>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div style="border: 3px solid #0d6efd;border-radius: 100%;background: white;padding: 5px 15px;color:#0d6efd" class="feature-icon d-inline-flex align-items-center justify-content-center   fs-2 mb-3">
+                                  <i class="bi bi-credit-card-fill" width="1em" height="1em"></i>
+                        </div>
+            <div style="margin-left:10px;">
+              <h5 class="fw-bold mb-1">Secure Payment</h3>
+              <span>100% secure payment. Get eaasy support anytime.</span>
+            </div>
+          </div>
 
 
-    <!-- /END THE FEATURETTES -->
+
+          <div class="col d-flex align-items-start">
+            <div style="border: 3px solid #0d6efd;border-radius: 100%;background: white;padding:  5px 15px;color:#0d6efd" class="feature-icon d-inline-flex align-items-center justify-content-center   fs-2 mb-3">
+                                  <i class="bi bi-headset" width="1em" height="1em"></i>
+                        </div>
+            <div style="margin-left:10px;">
+              <h5 class="fw-bold mb-1">24/7 Online Support</h3>
+              <span>Dedicated support anytime and anywhere.</span>
+            </div>
+          </div>
+
+
+          <div class="col d-flex align-items-start">
+            <div style="border: 3px solid #0d6efd;border-radius: 100%;background: white;padding: 5px 15px;color:#0d6efd" class="feature-icon d-inline-flex align-items-center justify-content-center   fs-2 mb-3">
+                                  <i class="bi bi-dropbox" width="1em" height="1em"></i>
+                        </div>
+            <div style="margin-left:10px;">
+              <h5 class="fw-bold mb-1">90 Days Return</h3>
+              <span>Return within 90days of receiving your order.</span>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
 
   </div>
+
+
+  <div class="container" style="text-align:center;">
+
+      <div><span style="margin-bottom:0px;border-bottom: 2px solid #000;padding-bottom: 3px;width: fit-content;">COLLECTION</span></div>
+      <h1 style="margin-top:10px;">Our Top Collection</h1>
+  </div>
+  <div class="container marketing" style="padding:15px 0px 80px 0px;">
+
+
+
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+
+
+
+           <div class="col">
+             <div class="card shadow-sm" onclick="location.href='/products/4/'">
+               <img src="{% static 'images/headset.jpg' %}" style="height:250px;object-fit: cover;">
+               <div class="card-body">
+                 <h5 class="card-text">Beats Wireless Headphones Case</h5>
+                 <p class="card-text">Red and White</p>
+                 <div>
+                   <span style="padding:5px 25px;" class="btn btn-primary">$45</span>
+                   <div style="float:right;">
+                              <div class="ratings">
+                                  <i class="bi bi-star-fill rating-color"></i>
+                                  <i class="bi bi-star-fill rating-color"></i>
+                                  <i class="bi bi-star-fill rating-color"></i>
+                                  <i class="bi bi-star-fill rating-color"></i>
+                                  <i class="bi bi-star-fill"></i>
+                              </div>
+                          </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+
+                       <div class="col">
+                         <div class="card shadow-sm" onclick="location.href='/products/4/'">
+                           <img src="{% static 'images/watch.jpg' %}" style="height:250px;object-fit: cover;">
+                           <div class="card-body">
+                             <h5 class="card-text">Beats Wireless Headphones Case</h5>
+                             <p class="card-text">Red and White</p>
+                             <div>
+                               <span style="padding:5px 25px;" class="btn btn-primary">$45</span>
+                               <div style="float:right;">
+                                          <div class="ratings">
+                                              <i class="bi bi-star-fill rating-color"></i>
+                                              <i class="bi bi-star-fill rating-color"></i>
+                                              <i class="bi bi-star-fill rating-color"></i>
+                                              <i class="bi bi-star-fill rating-color"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                          </div>
+                                      </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+
+            <div class="col">
+              <div class="card shadow-sm" onclick="location.href='/products/4/'">
+                <img src="{% static 'images/airpods.jpg' %}" style="height:250px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-text">Beats Wireless Headphones Case</h5>
+                  <p class="card-text">Red and White</p>
+                  <div>
+                    <span style="padding:5px 25px;" class="btn btn-primary">$45</span>
+                    <div style="float:right;">
+                               <div class="ratings">
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill"></i>
+                               </div>
+                           </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card shadow-sm" onclick="location.href='/products/4/'">
+                <img src="{% static 'images/airpods.jpg' %}" style="height:250px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-text">Beats Wireless Headphones Case</h5>
+                  <p class="card-text">Red and White</p>
+                  <div>
+                    <span style="padding:5px 25px;" class="btn btn-primary">$45</span>
+                    <div style="float:right;">
+                               <div class="ratings">
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill rating-color"></i>
+                                   <i class="bi bi-star-fill"></i>
+                               </div>
+                           </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+         </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+<section class="download-section">
+  <div class="container">
+    <div class="download-text">
+      <h1 style="font-weight:800!important;">DOWNLOAD THE APP AND GET A DISCOUNT!</h1>
+      <p>Get 30% off for first transaction using MayaCommerce Mobile app now.</p>
+      <div class="download-text__btns">
+        <img width="150px" alt="download_img" src="/static/images/playstore.svg">
+        <img width="150px" alt="download_img" src="/static/images/appstore.svg">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section style="background:#366fde" >
+  <div class="container" style="max-width:600px;" >
+    <div style="padding: 80px 0px; text-align: center;color:#fff;">
+      <h1 style="font-weight:800!important;">Subscribe to our newsletter</h1>
+      <p>Monthly digest of what's new and exciting from us.</p>
+      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Email address</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="margin:0px;">
+        <button class="btn btn-dark" type="button">Subscribe</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 {% endblock content %}

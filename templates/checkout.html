@@ -3,10 +3,15 @@
 
 {% block content %}
 <!-- Container -->
-<div class="row" style="padding-top:20px;">
+<div class="container mt-5 mb-5">
+   <div class="row d-flex justify-content-center">
+       <div class="col-md-12">
+           <div class="card">
+
   <form action="/Cart/mycart/checkout/commit/" method="post" class="container padding-top-3x padding-bottom-2x">
     {% csrf_token %}
-    <h1 class="space-top-half">{{title}}</h1>
+    <h2 class="space-top-half">{{title}}</h2>
+    <hr>
     <div class="row padding-top">
 
       <!-- Checkout Form -->
@@ -42,15 +47,19 @@
           <h3>Cart total:</h3>
           <h4>{{object.currency}} {{object.total}}</h4>
           <p class="text-sm text-gray">* Note: This amount includes costs for shipping to address you provided.</p>
-          <a <!href=" url 'Cart:MyCart' " class="btn btn-default btn-ghost icon-left btn-block">
+          <a href="{% url 'viewcart' %}" class="btn btn-dark">
             <i class="material-icons arrow_back"></i>
             Back To Cart
           </a>
           <button id="checkout" type="submit"
-            class="btn btn-primary btn-block waves-effect waves-light space-top-none">Checkout</button>
+            class="btn btn-primary ">Checkout</button>
         </aside>
       </div><!-- .col-md-3.col-sm-4 -->
     </div><!-- .row -->
   </form><!-- .container -->
+
+</div>
+</div>
+</div>
 </div>
 {% endblock %}
