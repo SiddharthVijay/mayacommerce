@@ -10,7 +10,15 @@
 
   <form action="/Cart/mycart/checkout/commit/" method="post" class="container padding-top-3x padding-bottom-2x">
     {% csrf_token %}
-    <h2 class="space-top-half">{{title}}</h2>
+
+
+      <h5 style="">
+
+        <a href="{% url 'viewcart' %}" class="btn btn-dark" style="margin-right:10px;">
+          <i class="bi bi-arrow-left"></i>
+        </a>{{title}}</h5>
+
+
     <hr>
     <div class="row padding-top">
 
@@ -47,12 +55,9 @@
           <h3>Cart total:</h3>
           <h4>{{object.currency}} {{object.total}}</h4>
           <p class="text-sm text-gray">* Note: This amount includes costs for shipping to address you provided.</p>
-          <a href="{% url 'viewcart' %}" class="btn btn-dark">
-            <i class="material-icons arrow_back"></i>
-            Back To Cart
-          </a>
+
           <button id="checkout" type="submit"
-            class="btn btn-primary ">Checkout</button>
+            class="btn btn-primary " style="width:100%;">Checkout</button>
         </aside>
       </div><!-- .col-md-3.col-sm-4 -->
     </div><!-- .row -->

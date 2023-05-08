@@ -18,7 +18,9 @@
       <p class="text-sm">
         <span class="text-gray">Currently</span> {{cart_count}} items
         <span class="text-gray"> in cart</span>
-        <a href="#" style="float:right;" class="btn btn-sm btn-dark" id="update">Update Cart</a>
+        {% if cart_count > 0 %}
+  <a href="#" style="float:right;" class="btn btn-sm btn-dark" id="update">Update Cart</a>
+  {% endif %}
 
       </p>
       <div class="shopping-cart">
@@ -43,7 +45,7 @@
               <a class="incr-btn" data-p="{{i.item.pk}}" data-action="increase" href="#">+</a>
             </div>
           </div>
-          <a href="#" class="item-remove" data-toggle="tooltip" data-p="{{i.item.pk}}"  data-placement="top" title="Remove" data-delete="False">
+          <a href="#" class="item-remove" data-toggle="tooltip" data-p="{{i.item.pk}}" data-placement="top" title="Remove" data-delete="False">
             <i class="bi bi-x-square"></i>
           </a>
         </div><!-- .item -->

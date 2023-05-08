@@ -112,6 +112,8 @@ console.log(window.sessionStorage.getItem("cart_items"));
             success : function(data) {
                 console.log('Cart items Updated');
 //                console.log('success');
+window.location = "/viewcart/";
+
             },
 
             error : function() {

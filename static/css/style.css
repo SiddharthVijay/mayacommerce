@@ -19,6 +19,17 @@
    --border-radius: 5px;
 }
 
+
+.btn-primary
+{
+box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+}
+
+
+.btn-dark
+{
+box-shadow: 0 4px 14px 0 rgb(0,0,0,0.39);
+}
 /*************************************  SCROLL BAR ************************************************/
 /* width */
 ::-webkit-scrollbar {
@@ -147,7 +158,7 @@ a:hover {
 
 
 .navbar-nav a.dropdown-item {
- font-weight:500 !important; 
+ font-weight:500 !important;
 }
 
 .carousel-caption h1{
@@ -681,7 +692,7 @@ textarea {
 
 
 .ratings i{
-    
+
     color:#cecece;
     font-size:20px;
 }
